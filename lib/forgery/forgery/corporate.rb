@@ -1,12 +1,12 @@
 class Forgery::Corporate < Forgery
 
   DEPARTMENTS = Forgery::Extend([
-    {type: 'Business', type: :jobs_business },
-    {type: 'Engineering', type: :jobs_engineering },
-    {type: 'Information Technology', type: :jobs_it },
-    {type: 'Accounting', type: :jobs_accounting },
+    {type: 'Business', dict: :jobs_business },
+    {type: 'Engineering', dict: :jobs_engineering },
+    {type: 'Information Technology', dict: :jobs_it },
+    {type: 'Accounting', dict: :jobs_accounting },
     {type: 'Human Resources', dict: :jobs_hr },
-    {type: 'Medical', type: :jobs_medical}
+    {type: 'Medical', dict: :jobs_medical}
   ])
 
   def self.department
